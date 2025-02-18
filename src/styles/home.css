@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: Montserrat !important;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+}
+
+.nav-bar {
+  background: #fff !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.nav-bar-btn {
+  color: #598428 !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 15px !important;
+}
+
+.description-title {
+  color: #598428 !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 5rem !important;
+  text-align: center;
+}
+
+.carruselPrincipal-text {
+  font-family: "Bebas Neue", serif !important;
+  /* font-size: 7rem !important; */
+}
+
+.products-text {
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 146% !important;
+  text-align: center;
+}
+
+.products-text-important {
+  color: #705b2c !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 146% !important;
+}
+
+.products-text-important-2 {
+  color: #598428 !important;
+  font-weight: bold !important;
+}
+
+.products-card-title {
+  color: #c74300 !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 146% !important;
+}
+
+.products-card-text {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 146% !important;
+}
+
+.contact-title {
+  color: #598428 !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+.contact-text {
+  color: #000 !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 1.5rem !important;
+  text-align: center;
+}
+
+.contact-text-email {
+  color: #598428 !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  font-size: 1.5rem !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+}
+
+.contact-btn {
+  padding: 8px 12px !important;
+  gap: 10px !important;
+  border: 2px solid #598428 !important;
+  border-radius: 12px !important;
+  color: #598428 !important;
+  font-size: 1rem !important;
+}
+
+.footer {
+  background-color: #598428;
+  color: #fff;
+  padding-bottom: 2;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 146% !important;
+}
+
+.footer-web {
+  color: #fff;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 146% !important;
+  text-decoration: none !important;
+}
+
+.promotor-title {
+  color: #5c1ac7 !important;
+  display: block !important;
+  font-size: 2rem !important;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.promotor-text {
+  color: #000 !important;
+  display: block !important;
+  font-size: 1rem !important;
+  text-align: justify;
+  margin-top: 2rem !important;
+}
+
+.promotor-text-card {
+  color: #000 !important;
+  display: block !important;
+  font-size: 1rem !important;
+  text-align: justify;
+  margin-bottom: 1rem !important;
+}
+
+.promotor-text-card-2 {
+  color: #000 !important;
+  display: block !important;
+  font-size: 1rem !important;
+  text-align: justify;
+  margin-bottom: 3rem !important;
+} 
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+  .nav-bar {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .description-title {
+    font-size: 2.5rem !important;
+  }
+
+  .promotor-text-card-2 {
+    /* width: 90% !important; */
+    margin: 25px !important;
+  }
+}
