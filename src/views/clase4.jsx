@@ -86,8 +86,44 @@ const Clase4 = () => {
     },
   ];
 
+  //Ejemplo de ciclo de vida
+  const [contador3, setContador3] = useState(0);
+  const [mostrar, setMostrar] = useState(true);
+
+  useEffect(() => {
+    console.log("✅ Componente montado");
+
+    const intervalo = setInterval(() => {
+      setContador3((prev) => prev + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalo); // Limpieza del intervalo
+      console.log("❌ Componente desmontado y intervalo limpiado");
+    };
+  }, [mostrar]); // Dependiendo de `mostrar`, se reiniciará el efecto
+
   return (
     <>
+      <div>
+        {mostrar ? (
+          <>
+            <h1>Tiempo: {contador3} segundos</h1>
+            <button onClick={() => setMostrar(false)}>
+              Desmontar Componente
+            </button>
+          </>
+        ) : (
+          <button
+            onClick={() => {
+              setContador3(0); // Reinicia el contador al montar de nuevo
+              setMostrar(true);
+            }}
+          >
+            Montar Componente
+          </button>
+        )}
+      </div>
       <div>
         <h2>{hora}</h2>
       </div>
